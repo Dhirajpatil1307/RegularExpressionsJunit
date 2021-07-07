@@ -32,4 +32,11 @@ public class UserRegistrationTest {
 		boolean check = registration.MobileNumberVerification();
 		assertTrue(check);
 	}
+
+	@Test
+	public void PasswordFormat() {
+		UserRegistrationUsingJunit registration = new UserRegistrationUsingJunit();
+		boolean check = registration.PasswordVerification();
+		assertTrue(check);
+	}
 }
