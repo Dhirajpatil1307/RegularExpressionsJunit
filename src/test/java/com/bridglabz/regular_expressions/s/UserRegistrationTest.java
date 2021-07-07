@@ -4,8 +4,6 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import com.bridgelabz.regular_expressions.JUnitUserRegistration;
-
 public class UserRegistrationTest {
 	@Test
 	public void check_Valid_Firstname() {
@@ -25,6 +23,13 @@ public class UserRegistrationTest {
 	public void Email() {
 		UserRegistrationUsingJunit registration = new UserRegistrationUsingJunit();
 		boolean check = registration.EmailVerification();
+		assertTrue(check);
+	}
+
+	@Test
+	public void MobileFormat() {
+		UserRegistrationUsingJunit registration = new UserRegistrationUsingJunit();
+		boolean check = registration.MobileNumberVerification();
 		assertTrue(check);
 	}
 }
