@@ -11,4 +11,11 @@ public class UserRegistrationTest {
 		boolean check = registration.FirstEntity();
 		assertTrue(check);
 	}
+
+	@Test
+	public void LastName() {
+		UserRegistrationUsingJunit registration = new UserRegistrationUsingJunit();
+		boolean check = registration.LastEntity();
+		assertTrue(check);
+	}
 }

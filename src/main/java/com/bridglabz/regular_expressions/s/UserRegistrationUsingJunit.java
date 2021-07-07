@@ -22,4 +22,20 @@ public class UserRegistrationUsingJunit {
 		}
 		return matchFound;
 	}
+
+	boolean LastEntity() {
+		String i;
+		System.out.println("Enter Your Last Name :-");
+		i = SC.next();
+		Pattern pattern = Pattern.compile("^[A-Z]{1}[a-z]{2}$");// Regex sintax
+		Matcher matcher = pattern.matcher(i);// Regex sintax
+
+		boolean matchFound = matcher.matches();// Use for identification of correct or incorrect.
+		if (matchFound) {
+			System.out.println("According To Pattern Matcher is Correct");
+		} else {
+			System.out.println("According To Pattern Matcher is Inorrect");
+		}
+		return matchFound;
+	}
 }
